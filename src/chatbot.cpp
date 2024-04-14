@@ -42,9 +42,6 @@ ChatBot::~ChatBot()
     }
 }
 
-//// STUDENT CODE
-////
-
 //Copy constructor
 ChatBot::ChatBot(const ChatBot& origin){ 
   std::cout << "ChatBot Copy Constructor"<<std::endl;

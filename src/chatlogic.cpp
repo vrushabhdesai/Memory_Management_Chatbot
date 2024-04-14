@@ -14,8 +14,7 @@
 
 ChatLogic::ChatLogic()
 {
-    //// STUDENT CODE
-    ////
+  
     
     std::cout<<"ChatLogic Constructor"<<std::endl;
 
@@ -25,8 +24,7 @@ ChatLogic::ChatLogic()
 
 ChatLogic::~ChatLogic()
 {
-    //// STUDENT CODE
-    ////
+  
 
     std::cout<<"ChatLogic Destructor"<<std::endl;
     
@@ -178,8 +176,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
         return;
     }
 
-    //// STUDENT CODE
-    ////
+  
 
     // identify root node
     GraphNode *rootNode = nullptr;
