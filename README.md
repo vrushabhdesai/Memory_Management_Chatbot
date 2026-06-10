@@ -27,6 +27,21 @@ The structure and logic of the program is explained in the following two images.
 <img src="images/Logic_flow1.png"/>
 <img src="images/Logic_flow2.png"/>
 
+## Project Structure
+
+```
+.
+├── CMakeLists.txt          # CMake build configuration
+├── images/                 # Screenshots, logic-flow diagrams, and GUI image assets
+└── src/
+    ├── chatgui.{h,cpp}     # wxWidgets GUI: window, panels, and message rendering
+    ├── chatlogic.{h,cpp}   # Parses answergraph.txt, builds the knowledge graph, routes user queries
+    ├── chatbot.{h,cpp}     # ChatBot: selects answers via Levenshtein distance (core memory-management work)
+    ├── graphnode.{h,cpp}   # GraphNode: a node in the knowledge graph (a chatbot answer)
+    ├── graphedge.{h,cpp}   # GraphEdge: an edge in the knowledge graph (a possible user query)
+    └── answergraph.txt     # Knowledge base: the nodes (answers) and edges (questions) loaded at startup
+```
+
 ## Basic Build Instructions
 
 1. Clone the project repository: `git clone https://github.com/vrushabhdesai/Memory_Management_Chatbot.git`
