@@ -1,1 +1,10 @@
-build/*
+# Build output
+build/
+
+# Editor / IDE
+.vscode/
+
+# Compiled objects & binaries
+membot
+*.o
+*.out
